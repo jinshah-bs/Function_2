@@ -46,4 +46,4 @@ def func(a: int, b: int, c:int, *args, d: float =25.0, **kwargs)->None:
     print("The kw argument is {}".format(d))
     print("The var-kw argument is {}".format(kwargs))
 
-func(1, 2, 3, 7, 8, 9, 10.0, d=11.0, e=[2,2], key1='hjg', key2=False)
+# func(1, 2, 3, 7, 8, 9, 10.0, d=11.0, e=[2,2], key1='hjg', key2=False)

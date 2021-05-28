@@ -5,6 +5,8 @@
 # b = 15
 # print(a+b)
 # print(a.__add__(b))
+from account import Account
+import account
 
 class CarModel:
 
@@ -29,3 +31,16 @@ Tigor = CarModel("Tigor", "NB", 1600)
 Tigor.print_data()
 Tigor.Fuel = "Diesel"
 Tigor.print_data()
+
+jb = Account("Jeya Balaganesh", 0)
+jb.deposit(5000)
+jb.withdraw(500)
+jb.transaction_history()
+
+Jin = Account("Jinshah", 100000)
+Jin.deposit(2500)
+Jin.withdraw(50000)
+Jin.transaction_history()
+
+print()
+account.Div.transaction_history()

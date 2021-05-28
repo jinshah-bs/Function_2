@@ -5,6 +5,8 @@
 # b = 15
 # print(a+b)
 # print(a.__add__(b))
+PI = 3.1415
+
 
 class CarModel:
 
@@ -29,6 +31,7 @@ Tigor = CarModel("Tigor", "NB", 1600)
 Tigor.Printdata()
 Tigor.Fuel = "Diesel"
 Tigor.Printdata()
-
-
-
+print(Tiago.type)
+print(PI)
+PI = 2.8
+print(PI)

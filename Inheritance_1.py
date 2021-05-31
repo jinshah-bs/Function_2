@@ -22,10 +22,13 @@ class SubContact(Contact):
 
 jb = Contact("Bala", 123456, "bala123")
 div = SubContact('divak', 789456, "div789")
+print(jb.all_contacts)
+print(Contact.all_contacts)
+print(jb.name)
 
 jb.print_Contact()
 div.print_Contact()
-print(Contact.all_contacts)
+print(div.all_contacts)
 
 div.message('Hai div')
 # jb.message('Hai div')

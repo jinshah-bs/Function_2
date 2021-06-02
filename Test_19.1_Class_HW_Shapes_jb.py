@@ -1,6 +1,5 @@
 import math
 
-
 class Shapes:
 
     def __init__(self, name, a, b=1.0):

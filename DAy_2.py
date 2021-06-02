@@ -39,3 +39,7 @@ letters = "abcdefghijklmnopqrstuvwxyz"
 # print(4.5 % 2)
 # print(4 ** 2)
 # print("{:^27}".format(letters[1:7]))
+
+lis = [1, 2, 3, 4, 5]
+a = 10
+b = 15.5

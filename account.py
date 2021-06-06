@@ -1,6 +1,8 @@
 import datetime
 import pytz
 
+class InvalidWithdrowal(Exception):
+    pass
 
 class Account:
     """"" This is a simple account class
@@ -48,7 +50,8 @@ class Account:
             self.show_balance()
             self.transactionList.append((Account._current_time(), -amount, self.__balance))
         else:
-            print("Sorry you don't have that much amount")
+            raise InvalidWithdrowal("You dont have that much money")
+            # print("Sorry you don't have that much amount")
             self.show_balance()
 
     def show_balance(self):
@@ -79,8 +82,7 @@ if __name__ == '__main__':
     Div.deposit(2000)
     Div.deposit(2000)
     Div.withdraw(1500)
-    Div.deposit(1000000)
-    Div.withdraw(3000)
+    Div.withdraw(30000)
     Div.show_balance()
     Div.transaction_history()
     Div.show_balance()

@@ -35,6 +35,11 @@ print('jin' + 'shah')
 # print(s.sum(1,2,3,4,5))
 
 # Operator overloading
+class Complex:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
 class CoOrdinate:
 
     def __init__(self, x, y):
@@ -44,13 +49,14 @@ class CoOrdinate:
     def __add__(self, other):
         X = self.x + other.x
         Y = self.y + other.y
-        s3 = CoOrdinate(X,Y)
+        s3 = CoOrdinate(X, Y)
         return s3
 
 
+comp = Complex(2 , 3)
 c1 = CoOrdinate(0, 4)
 c2 = CoOrdinate(5, 6)
-c3 = c1 + c2
+c3 = c1 + comp
 print(c3.x, c3.y)
 
 #method overriding
